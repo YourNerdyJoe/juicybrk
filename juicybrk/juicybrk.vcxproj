@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{22D13F34-3D9E-4E61-A2D3-EF3307427BCA}</ProjectGuid>
+    <RootNamespace>juicybrk</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>E:\dev\tonc-code\code\tonclib\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>E:\dev\tonc-code\code\tonclib\lib;$(LibraryPath)</LibraryPath>
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>make clean &amp;&amp; make</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ballsystem.cpp" />
+    <ClCompile Include="bricks.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="collision.cpp" />
+    <ClCompile Include="component.cpp" />
+    <ClCompile Include="filesystem.cpp" />
+    <ClCompile Include="libgbfs.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="object.cpp" />
+    <ClCompile Include="particles.cpp" />
+    <ClCompile Include="physics.cpp" />
+    <ClCompile Include="playerinputsystem.cpp" />
+    <ClCompile Include="rumble.cpp" />
+    <ClCompile Include="sprite.cpp" />
+    <ClCompile Include="system.cpp" />
+    <ClCompile Include="transform.cpp" />
+    <ClCompile Include="video.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="juicybrk.gba" />
+    <None Include="Makefile" />
+    <None Include="makeimg.mak" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ballsystem.h" />
+    <ClInclude Include="bricks.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="collision.h" />
+    <ClInclude Include="component.h" />
+    <ClInclude Include="filesystem.h" />
+    <ClInclude Include="gbfs.h" />
+    <ClInclude Include="object.h" />
+    <ClInclude Include="particles.h" />
+    <ClInclude Include="physics.h" />
+    <ClInclude Include="playerinputsystem.h" />
+    <ClInclude Include="rumble.h" />
+    <ClInclude Include="sprite.h" />
+    <ClInclude Include="system.h" />
+    <ClInclude Include="transform.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="video.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

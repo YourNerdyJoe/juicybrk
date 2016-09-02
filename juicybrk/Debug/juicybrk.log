@@ -1,0 +1,20 @@
+﻿Build started 10/18/2014 9:31:31 PM.
+     1>Project "E:\prog\gba\juicybrk\juicybrk\juicybrk.vcxproj" on node 2 (build target(s)).
+     1>Build:
+         make
+         camera.cpp
+         arm-none-eabi-g++ -MMD -MP -MF /e/prog/gba/juicybrk/juicybrk/build/camera.d -g -Wall -O3 -mcpu=arm7tdmi -mtune=arm7tdmi -fomit-frame-pointer -ffast-math -specs=gba.specs -mthumb -mthumb-interwork  -I/c/devkitPro/libgba/include -Ie:/dev/tonc-code/code/tonclib/include -I/e/prog/gba/juicybrk/juicybrk/build -I /c/devkitPro/libgba/include/lua -I e:/dev/tonc-code/code/tonclib/include -std=c++11 -c /e/prog/gba/juicybrk/juicybrk/./camera.cpp -o camera.o 
+         linking cartridge
+         make[2]: Nothing to be done for `all'.
+                 60 brick.img.bin
+                 80 brick.pal.bin
+                 16 particle.img.bin
+                 76 particle.pal.bin
+                  2 test.txt
+         built ... juicybrk.gba
+         ROM fixed!
+     1>Done Building Project "E:\prog\gba\juicybrk\juicybrk\juicybrk.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.01
