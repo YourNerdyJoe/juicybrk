@@ -1,0 +1,10 @@
+./juicybrk/build/*
+./juicybrk/Debug/*
+*.exe
+./juicybrk/tools/gbfs
+./juicybrk/tools/lsgbfs
+./juicybrk/tools/insgbfs
+./juicybrk/tools/ungbfs
+./juicybrk/tools/padbin
+./juicybrk/tools/bin2s
+
